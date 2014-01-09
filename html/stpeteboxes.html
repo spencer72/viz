@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="scripts/stpete2.css" type="text/css" />
+<script type="text/javascript" src="scripts/raphael.js"></script>
+<script type="text/javascript" src="scripts/spcensusdata2.js"></script>
+<script type="text/javascript" src="scripts/stpetemosaic.js"></script>
+</head>
+<body onload="loadGraph()">
+<div id="canvas">
+<div id="paper"></div></div>
+<div id="sidebar">
+<p>[<a href="default.html">Home</a>]</p>
+<table align="center" border="0" bordercolor="#000000" cellspacing="0" height="80">
+<tbody>
+<tr valign="top">
+<td width="180">
+<p><input id="thumb1" alt="" title="" src="images/boxtrail70.png" onclick="makeSquares(dem70, obj70, '1970')" class="roundsquare" height="80" type="image" width="180" /></p></td>
+<td width="140">
+<p><input id="thumb2" alt="" title="" src="images/boxtrail80.png" onclick="makeSquares(dem80, obj80, '1980')" class="roundsquare" height="80" type="image" width="180" /></p></td>
+<td width="140">
+<p><input id="thumb3" alt="" title="" src="images/boxtrail90.png" onclick="makeSquares(dem90, obj90, '1990')" class="roundsquare" height="80" type="image" width="180" /></p></td>
+<td width="140">
+<p><input id="thumb4" alt="" title="" src="images/boxtrail00.png" onclick="makeSquares(dem2k, obj2K, '2000')" class="roundsquare" height="80" type="image" width="180" /></p></td>
+<td width="140">
+<p><input id="thumb5" alt="" title="" src="images/boxtrail10.png" onclick="makeSquares(dem10, obj10, '2010')" class="roundsquare" height="80" type="image" width="180" /></p></td></tr></tbody></table></div>
+<div id="middle_sidebar">
+<h1>This is an alternate way to visualize <a href="stpete.html">demographic change in St. Petersburg, FL between 1970 and 2010</a>. Each box represents a single age category; the size of each box represents that age group's share of the city's population relative to all other age groups.<br />
+This design began as a mosaic plot, but I didn't feel like that plot was particularly easy to read or very informative. Hopefully this works better.</h1></div>
+<div id="top_corner"></div>
+</body>
+</html>

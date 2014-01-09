@@ -1,0 +1,156 @@
+html {
+height: 100%;
+}
+
+a:link {color:#CD661D;}
+ :visited {color:#CD661D;}
+ 
+body {
+height: 100%;
+margin: 0;
+link:#CD661D;
+background-color: #ccd4d9;
+font-family: Helvetica, sans-serif;
+text-align: center;
+color: black;
+font-size: 0.8em;
+}
+
+#canvas {
+height: 650px;
+position: absolute;
+top: 5%;
+width: 800px;
+}
+
+#paper {
+height: 650px;
+left: 0;
+position: absolute;
+top: 0;
+width: 1000px;
+}
+
+
+
+#sidebar {
+  position: fixed;
+  left: 85%;
+  background-color: #5C5C5C;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding: 1em;
+}
+
+#middle_sidebar {
+  position: absolute;
+  background-color: #5C5C5C;
+  border-radius:2em;
+  left: 770px;
+  height: 150px;
+  width: 200px;
+  top: 25px;
+  overflow: visible;
+  padding: 1em;
+}
+
+#top_corner {
+  display: none;
+  background-color: #5E767E;
+  position: absolute;
+  left: 90px;
+  height: 60px;
+  width: 160px;
+  top: 30px;
+  font-size:335%;
+  font-weight:bold;
+  line-height:150%;
+  text-align: center;
+  color:black;
+}
+
+#sidebar img {
+vertical-align: middle;
+border: none;
+}
+
+#valabel {
+  display:none;
+  position: absolute;
+  background-color: #778899;
+  left: 70px;
+  height: 60px;
+  width: 220px;
+  top: 525px;
+  font-size:235%;
+  font-weight:bold;
+  line-height:150%;
+  text-align: center;
+  color: #625D5D;
+
+}
+
+#mdlabel {
+  display:none;
+  position: absolute;
+  background-color: #5E767E;
+  left: 770px;
+  height: 60px;
+  width: 220px;
+  top: 245px;
+  font-size:235%;
+  font-weight:bold;
+  line-height:150%;
+  text-align: center;
+  color: #5C5C5C;
+
+}
+
+.roundsquare {
+border-radius: 8px;
+}
+
+
+h1 {
+font-size:90%;
+font-weight:normal;
+line-height: 130%;
+text-align:left;
+color: #FAFAFA;
+}
+
+h5{
+font-size:135%;
+font-weight:bold;
+line-height:75%;
+text-align: center;
+color:black;
+}
+
+h6{
+font-size:115%;
+font-weight:bold;
+line-height:50%;
+text-align: center;
+color:black;
+}
+
+h4 {
+font-size:100%;
+font-weight:normal;
+color:white;
+}
+
+h2{
+font-size:125%;
+font-weight:bold;
+color:white;
+}
+
+h3{
+font-size:165%;
+font-weight:bold;
+color:white;
+}

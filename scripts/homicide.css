@@ -1,0 +1,101 @@
+html {
+height: 100%;
+}
+
+a:link {color:#CD661D;}
+ :visited {color:#CD661D;}
+
+body {
+height: 100%;
+margin: 0;
+
+background-color: #E6E6E8;
+font-family: Helvetica, sans-serif;
+text-align: center;
+color: #5C5C5C;
+font-size: 0.8em;
+}
+
+#map{
+width: 75%;
+height: 100%;
+}
+
+
+#sidebar {
+position: absolute;
+left: 75%;
+top: 0;
+right: 0;
+bottom: 0%;
+padding: 1em;
+}
+
+#callout {
+display: none;
+position: absolute;
+left: 55%;
+top: 10%;
+width: 160px;
+height: 78px;
+text-align: left;
+font-size:110%;
+font-weight:bold;
+line-height: 135%;
+opacity: 0.8;
+background-color: #FAFBFC;
+border: 1px solid grey;
+border-radius: 8px;
+padding: 5px;
+}
+
+#keybox {
+display: fixed;
+position: absolute;
+left: 32%;
+top: 8%;
+width: 110px;
+height: 100px;
+text-align: left;
+line-height: 135%;
+background-image:url('http://www.drawmeamap.com/images/key.png');
+border: 1px solid grey;
+border-radius: 8px;
+padding: 5px;
+}
+
+
+#sidebar img {
+vertical-align: middle;
+border: none;
+}
+
+.roundsquare {
+border-radius: 8px;
+}
+
+h1,h6 {
+font-size:100%;
+font-weight:normal;
+}
+
+h2{
+font-size:125%;
+font-weight:bold;
+}
+
+h3{
+font-size:165%;
+font-weight:bold;
+}
+
+h4{
+text-align: left;
+font-size:90%;
+font-weight:bold;
+}
+
+h5{
+font-size:90%;
+font-weight:bold;
+}
