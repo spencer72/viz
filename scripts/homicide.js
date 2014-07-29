@@ -1,3 +1,5 @@
+//see this code run here: http://drawmeamap.com/homicide.html
+
 var vis;
 
 var margin = {top: 40, right: 20, bottom: 30, left: 50},
