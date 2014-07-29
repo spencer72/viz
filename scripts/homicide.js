@@ -35,13 +35,12 @@ else {q = 105};
 function onElementMouseOver(d){
     document.getElementById('callout').innerHTML = "";
   	document.getElementById('callout').style.display = "block";
-  	document.getElementById('callout').innerHTML = "Year: " + d.Year + "<br />" + "Population: " + d.pop + "<br />" + "Homicides: " + d.murders + "<br />" + "Rate (per 100K): " + d.rate;})
-}
+  	document.getElementById('callout').innerHTML = "Year: " + d.Year + "<br />" + "Population: " + d.pop + "<br />" + "Homicides: " + d.murders + "<br />" + "Rate (per 100K): " + d.rate;}
 
 function onElementMouseOut(d){
     document.getElementById('callout').innerHTML = "";
-  	document.getElementById('callout').style.display = "";});
-}
+  	document.getElementById('callout').style.display = "";}
+
 
 
 var data = cityname;
