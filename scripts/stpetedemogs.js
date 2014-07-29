@@ -1,4 +1,4 @@
-
+//see this code run here: http://drawmeamap.com/stpete.html
 
 var R; 
 
