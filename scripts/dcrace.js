@@ -1,3 +1,7 @@
+//see this code running here: http://drawmeamap.com/dcrace.html
+
+
+
 var R; 
 var circs = {};
 
