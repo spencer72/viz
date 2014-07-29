@@ -31,6 +31,19 @@ var q;
 if (cityname == detroit) {q = 210}
 else {q = 105};
 
+
+function onElementMouseOver(d){
+    document.getElementById('callout').innerHTML = "";
+  	document.getElementById('callout').style.display = "block";
+  	document.getElementById('callout').innerHTML = "Year: " + d.Year + "<br />" + "Population: " + d.pop + "<br />" + "Homicides: " + d.murders + "<br />" + "Rate (per 100K): " + d.rate;})
+}
+
+function onElementMouseOut(d){
+    document.getElementById('callout').innerHTML = "";
+  	document.getElementById('callout').style.display = "";});
+}
+
+
 var data = cityname;
 
 //adding the SVG element to the DOM
@@ -112,13 +125,8 @@ vis.selectAll("circle")
   .attr("height", function(datum) { return y2((datum.rate)); })
   .attr("fill", "maroon")
   .attr("r", 3)
-  .on("mouseover", function(d) {
-  	document.getElementById('callout').innerHTML = "";
-  	document.getElementById('callout').style.display = "block";
-  	document.getElementById('callout').innerHTML = "Year: " + d.Year + "<br />" + "Population: " + d.pop + "<br />" + "Homicides: " + d.murders + "<br />" + "Rate (per 100K): " + d.rate;})
-  .on("mouseout", function(d) {
-  	document.getElementById('callout').innerHTML = "";
-  	document.getElementById('callout').style.display = "";});  
+  .on("mouseover", function(d) { return onElementMouseOver(d);})
+  .on("mouseout", function(d) { return onElementMouseOut(d);});
 
 vis.append("svg:path")
   .attr("d", popLine(data))
@@ -137,13 +145,9 @@ vis.selectAll("circle2")
   .attr("height", function(datum) { return y((datum.pop)/10000); })
   .attr("fill", "cornflowerblue")
   .attr("r", 3)
-  .on("mouseover", function(d) {
-  	document.getElementById('callout').innerHTML = "";
-  	document.getElementById('callout').style.display = "block";
-  	document.getElementById('callout').innerHTML = "Year: " + d.Year + "<br />" + "Population: " + d.pop + "<br />" + "Homicides: " + d.murders + "<br />" + "Rate (per 100K): " + d.rate;})
-  .on("mouseout", function(d) {
-  	document.getElementById('callout').innerHTML = "";
-  	document.getElementById('callout').style.display = "";});
+  .on("mouseover", function(d) { return onElementMouseOver(d);})
+  .on("mouseout", function(d) { return onElementMouseOut(d);});
+
 
 
 vis.selectAll("text.xAxis")
@@ -174,14 +178,11 @@ vis.selectAll("indx.lines")
   .on("mouseover", function(d) {
   	d3.select(this).attr("fill-opacity", 0.7);
   	d3.select(this).attr("stroke-opacity", 0.7);
-  	document.getElementById('callout').innerHTML = "";
-  	document.getElementById('callout').style.display = "block";
-  	document.getElementById('callout').innerHTML = "Year: " + d.Year + "<br />" + "Population: " + d.pop + "<br />" + "Homicides: " + d.murders + "<br />" + "Rate (per 100K): " + d.rate;})
-  .on("mouseout", function(d) {
+    return onElementMouseOver(d);})
+  .on("mouseout", function(d) { 
   	d3.select(this).attr("fill-opacity", 0.2);
   	d3.select(this).attr("stroke-opacity", 0.2);
-  	document.getElementById('callout').innerHTML = "";
-  	document.getElementById('callout').style.display = "";});
+  	return onElementMouseOut(d);});
 
 };
 
