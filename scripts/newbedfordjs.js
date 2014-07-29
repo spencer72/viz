@@ -1,3 +1,5 @@
+//see this code run here: http://drawmeamap.com/newbedfordmap.html
+
 function loadMap() 
 {
 var R = Raphael("paper", 1000, 700);
