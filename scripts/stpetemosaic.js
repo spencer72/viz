@@ -1,4 +1,4 @@
-//http://drawmeamap.com/stpeteboxes.html
+//see this code run at http://drawmeamap.com/stpeteboxes.html
 
 var R;
 
