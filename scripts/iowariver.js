@@ -1,3 +1,5 @@
+//see this code run here: http://drawmeamap.com/iowarr.html
+
 var R;
 
 var stateAttrib = 
