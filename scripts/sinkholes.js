@@ -1,3 +1,5 @@
+//see this code run here: http://drawmeamap.com/sinkholemap.html
+
 var R;
 
 var j=0;
