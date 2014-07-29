@@ -1,3 +1,6 @@
+//see this code run here: http://drawmeamap.com/dethisto.html
+
+
 function onLoad()
 {
 
