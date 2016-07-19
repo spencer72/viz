@@ -1,4 +1,3 @@
-//see this code run here: http://drawmeamap.com/homicide.html
 
 var vis;
 
